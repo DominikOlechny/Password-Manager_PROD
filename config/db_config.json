@@ -1,0 +1,13 @@
+{
+  "engine": "mssql",
+  "driver": "ODBC Driver 17 for SQL Server",
+  "server": "",
+  "port": ,
+  "database": "",
+  "username": "",
+  "password": "",
+  "encrypt": true,
+  "column_encryption": true,
+  "trust_server_certificate": true,
+  "timeout": 5
+}
