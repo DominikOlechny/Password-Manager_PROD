@@ -1,6 +1,5 @@
 """Pomocnicze funkcje do tworzenia skrótów haseł użytkowników."""
 
-from __future__ import annotations
 
 import os 
 from pathlib import Path
@@ -47,3 +46,4 @@ def hash_password( # tworzy hash hasla bcrypt
     mixed_password = password_bytes + b":" + salt
     bcrypt_salt = bcrypt.gensalt(rounds=rounds)
     return bcrypt.hashpw(mixed_password, bcrypt_salt)
+
