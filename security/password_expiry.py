@@ -3,7 +3,6 @@ Zawiera funkcje:
 - is_password_expired(): Sprawdza czy data wygasniecia juz minela.
 """
 
-from __future__ import annotations
 
 from datetime import datetime
 
@@ -14,3 +13,4 @@ def is_password_expired(expire_date: datetime | None) -> bool: # sprawdza czy ha
 
     now = datetime.now(expire_date.tzinfo) if expire_date.tzinfo else datetime.now()
     return now.date() > expire_date.date()
+
